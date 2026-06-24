@@ -18,7 +18,7 @@ line-height:1.7;
 .hero{
 background:linear-gradient(135deg,#0b4f8a,#3fa9f5);
 color:white;
-padding:60px 20px 40px;
+padding:60px 15px 80px;
 text-align:center;
 position:relative;
 }
@@ -40,36 +40,49 @@ display:block;
 filter:drop-shadow(0 4px 12px rgba(0,0,0,0.2));
 }
 
-/* ✅ RUBRIK – NU MED TYDLIGA MARGINALER */
-.hero h1{
-font-size:2.4rem;
-margin:0 auto 5px;
-text-shadow:0 3px 10px rgba(0,0,0,0.25);
-max-width:520px;
-padding:0 20px;
-box-sizing:border-box;
-}
-
-/* ✅ UNDERRUBRIK */
-.subtitle{
-margin-top:5px;
-font-size:1rem;
-opacity:0.9;
-max-width:500px;
-padding:0 20px;
-margin-left:auto;
-margin-right:auto;
-box-sizing:border-box;
-}
-
-/* ✅ BRÖDTEXT */
-.hero p{
+/* HERO-KORT */
+.hero-card{
+background:white;
+color:#2d3748;
 max-width:600px;
+margin:0 auto;
+padding:18px 20px;
+border-radius:14px;
+box-shadow:0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* ✅ NY TITELSTIL */
+.main-title{
+font-size:2rem;
+font-weight:600;
+letter-spacing:0.5px;
+margin:0 0 8px;
+text-align:center;
+position:relative;
+}
+
+.main-title::after{
+content:"";
+display:block;
+width:50px;
+height:3px;
 margin:10px auto 0;
-font-size:1.05rem;
-opacity:0.95;
-padding:0 20px;
-box-sizing:border-box;
+background:#3fa9f5;
+border-radius:2px;
+opacity:0.8;
+}
+
+/* UNDERRUBRIK */
+.subtitle{
+font-size:0.95rem;
+opacity:0.8;
+margin-bottom:10px;
+}
+
+/* INTRO */
+.hero-card p{
+margin:0;
+font-size:1rem;
 }
 
 /* CONTAINER */
@@ -173,16 +186,12 @@ max-width:180px;
 margin-bottom:15px;
 }
 
-.hero h1{
-font-size:1.8rem;
+.main-title{
+font-size:1.6rem;
 }
 
-.subtitle{
-font-size:0.9rem;
-}
-
-.hero p{
-font-size:1rem;
+.hero-card{
+padding:16px;
 }
 
 .section{
@@ -200,23 +209,30 @@ padding:16px;
 
 <img src="digidelcenter.jpg" alt="DigidelCenter logga" class="logo">
 
-<h1>DigidelCenter Örnsköldsvik<br> Enkätresultat <br>våren 2026</h1>
-
+<div class="hero-card">
+<h1 class="main-title">Enkätresultat våren 2026</h1>
+<div class="subtitle">DigidelCenter Örnsköldsvik</div>
 <p>
-Tack för era svar! 💙<br>
+Tack för era svar! 💙
 </p>
+</div>
 
 </div>
 
+<div class="container">
+
+<!-- ✅ TEXTEN NU I RUTA -->
+<section class="section">
+
 <h2>Det ni vill lära er mer om</h2>
 
-<p class="intro">
+<p>
 68 personer svarade på enkäten.
 <br><br>
 Siffrorna visar hur många som röstat på ett visst tema till en tematräff.
 </p>
 
-<div class="container">
+</section>
 
 <section class="section">
 
