@@ -14,24 +14,38 @@ color:#2d3748;
 line-height:1.7;
 }
 
+/* HERO - mer "pop" */
 .hero{
-background:linear-gradient(135deg,#1f6fb2,#3fa9f5);
+background:linear-gradient(135deg,#0b4f8a,#3fa9f5);
 color:white;
-padding:70px 20px;
+padding:80px 20px;
 text-align:center;
+position:relative;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:radial-gradient(circle at top, rgba(255,255,255,0.25), transparent 60%);
+pointer-events:none;
 }
 
 .hero h1{
-font-size:2.3rem;
+font-size:2.6rem;
 margin-bottom:10px;
+letter-spacing:0.5px;
+text-shadow:0 2px 10px rgba(0,0,0,0.25);
 }
 
 .hero p{
 max-width:800px;
 margin:auto;
-font-size:1.1rem;
+font-size:1.15rem;
+opacity:0.95;
 }
 
+/* CONTAINER */
 .container{
 max-width:1100px;
 margin:auto;
@@ -51,8 +65,9 @@ color:#1f6fb2;
 margin-top:0;
 }
 
+/* STAPLAR - lite mer diskreta */
 .chart-row{
-margin-bottom:12px;
+margin-bottom:10px;
 }
 
 .label{
@@ -60,10 +75,11 @@ display:flex;
 justify-content:space-between;
 font-weight:bold;
 margin-bottom:3px;
+font-size:0.95rem;
 }
 
 .bar{
-height:16px;
+height:14px;
 background:#e6eef6;
 border-radius:20px;
 overflow:hidden;
@@ -75,6 +91,7 @@ background:linear-gradient(to right,#4fa5ff,#74d3c5);
 border-radius:20px;
 }
 
+/* CARDS */
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
@@ -101,6 +118,7 @@ margin-top:10px;
 margin-top:20px;
 margin-bottom:10px;
 font-weight:bold;
+font-size:1.05rem;
 }
 
 .divider{
@@ -139,14 +157,34 @@ padding:12px;
 border-radius:10px;
 }
 
+/* FOOTER */
 .footer{
 text-align:center;
 padding:30px;
 color:#567;
 }
 
+/* MOBIL */
 @media(max-width:700px){
-.hero h1{font-size:1.8rem;}
+.hero{
+padding:60px 15px;
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+.section{
+padding:18px;
+}
+
+.bar{
+height:12px;
+}
 }
 </style>
 
@@ -155,10 +193,10 @@ color:#567;
 <body>
 
 <div class="hero">
-<h1>Tack för era svar 💙</h1>
+<h1>📊 Enkätresultat 2026</h1>
 <p>
-68 personer har svarat på vår enkät.
-Här ser ni vad ni tycker.
+Tack för era svar 💙<br>
+Här ser ni vad ni tycker om DigidelCenter och våra tematräffar.
 </p>
 </div>
 
@@ -166,7 +204,7 @@ Här ser ni vad ni tycker.
 
 <section class="section">
 
-<h2>📊 Det ni vill lära er mer om</h2>
+<h2>Det ni vill lära er mer om</h2>
 
 <div class="chart-row"><div class="label"><span>📱 Nyttiga appar</span><span>41</span></div><div class="bar"><div class="fill" style="width:100%"></div></div></div>
 <div class="chart-row"><div class="label"><span>🛡️ Internetsäkerhet</span><span>39</span></div><div class="bar"><div class="fill" style="width:95%"></div></div></div>
@@ -183,7 +221,7 @@ Här ser ni vad ni tycker.
 
 <section class="section">
 
-<h2>❤️ Det ni säger</h2>
+<h2>Det ni säger</h2>
 
 <div class="comment-section">
 
@@ -191,9 +229,9 @@ Här ser ni vad ni tycker.
 
 <div class="comment-grid">
 <div class="bubble good">”Det känns bra att lära tillsammans med andra.”</div>
-<div class="bubble good">”Fikastunden gör att man kan prata med varandra och dela kunskaper.”</div>
-<div class="bubble good">”Tematräffarna har varit väldigt bra och bra kunskap har förmedlats.”</div>
-<div class="bubble good">"Jättebra att man kan beställa tid om man har ett speciellt problem." </div>
+<div class="bubble good">”Fikastunden gör det lätt att prata och lära av varandra.”</div>
+<div class="bubble good">”Tematräffarna har varit bra och lärorika.”</div>
+<div class="bubble good">”Bra att kunna få hjälp när man behöver.”</div>
 </div>
 
 <div class="divider"></div>
@@ -201,19 +239,12 @@ Här ser ni vad ni tycker.
 <div class="subheading">🟠 Det vi kan göra bättre</div>
 
 <div class="comment-grid">
-<div class="bubble improve">”Önskar tematräffar på olika veckodagar, inte bara onsdagar.”</div>
-<div class="bubble improve">”Ibland är det olika nivå i gruppen, vilket kan vara svårt.”</div>
-<div class="bubble improve">”Det behövs mer tid för att öva under träffarna.”</div>
+<div class="bubble improve">”Önskar träffar på olika veckodagar än bara onsdagar.”</div>
+<div class="bubble improve">”Ibland olika nivå i gruppen, vilket kan vara svårt.”</div>
+<div class="bubble improve">”Mer tid för att öva under träffarna.”</div>
 <div class="bubble improve">”Önskar fler tider för Digitalhjälpen.”</div>
 </div>
 
-</div>
-
-<div class="note">
-<p>
-💡 Många tycker att det är bra att lära tillsammans.
-Det gör att man vågar fråga mer och känner sig trygg.
-</p>
 </div>
 
 </section>
@@ -227,13 +258,14 @@ Tack vare era svar planerar vi höstens träffar.
 </p>
 
 <ul>
-<li>Vi kommer erbjuda tematräffar om bland annat appar, internetsäkerhet och mobilfoto</li>
-<li>Vi varierar vilken veckodag tematräffarna äger rum, så fler kan vara med</li>
+<li>Vi fortsätter med appar, internetsäkerhet och mobilfoto</li>
+<li>Vi lägger till fler teman från er lista</li>
+<li>Vi har fler dagar och tider så fler kan vara med</li>
 <li>Vi försöker ha lagom tempo och tid för frågor</li>
 </ul>
 
 <p>
-Era svar hjälper oss att göra vår verksamhet bättre för alla.
+Tack för att ni hjälper oss att göra verksamheten bättre 💙
 </p>
 
 </section>
@@ -241,7 +273,6 @@ Era svar hjälper oss att göra vår verksamhet bättre för alla.
 </div>
 
 <div class="footer">
-Tack för att ni hjälper oss 💙<br>
 Vi ses i höst 🌱
 </div>
 
