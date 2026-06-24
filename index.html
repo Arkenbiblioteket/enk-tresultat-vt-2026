@@ -31,7 +31,7 @@ background:radial-gradient(circle at top, rgba(255,255,255,0.25), transparent 60
 pointer-events:none;
 }
 
-/* ✅ LOGGA */
+/* LOGGA */
 .logo{
 max-width:260px;
 width:100%;
@@ -40,18 +40,24 @@ display:block;
 filter:drop-shadow(0 4px 12px rgba(0,0,0,0.2));
 }
 
-/* RUBRIK */
+/* RUBRIK (fixad mobil) */
 .hero h1{
 font-size:2.4rem;
-margin-bottom:5px;
+margin:0 auto 5px;
 text-shadow:0 3px 10px rgba(0,0,0,0.25);
+max-width:600px;
+padding:0 10px;
 }
 
-/* ✅ UNDERRUBRIK */
+/* UNDERRUBRIK */
 .subtitle{
 margin-top:5px;
 font-size:1rem;
 opacity:0.9;
+max-width:600px;
+padding:0 10px;
+margin-left:auto;
+margin-right:auto;
 }
 
 .hero p{
@@ -59,6 +65,7 @@ max-width:750px;
 margin:10px auto 0;
 font-size:1.1rem;
 opacity:0.95;
+padding:0 10px;
 }
 
 /* CONTAINER */
@@ -163,7 +170,7 @@ margin-bottom:15px;
 }
 
 .hero h1{
-font-size:2rem;
+font-size:1.8rem;
 }
 
 .subtitle{
@@ -187,10 +194,8 @@ padding:16px;
 <!-- HERO -->
 <div class="hero">
 
-<!-- ✅ LOGGA -->
 <img src="digidelcenter.jpg" alt="DigidelCenter logga" class="logo">
 
-<!-- ✅ UPPDELAD RUBRIK -->
 <h1>Enkätresultat våren 2026</h1>
 <p class="subtitle">DigidelCenter Örnsköldsvik</p>
 
