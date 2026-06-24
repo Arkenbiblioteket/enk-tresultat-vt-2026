@@ -18,7 +18,7 @@ line-height:1.7;
 .hero{
 background:linear-gradient(135deg,#0b4f8a,#3fa9f5);
 color:white;
-padding:60px 15px 80px;
+padding:60px 15px 70px;
 text-align:center;
 position:relative;
 }
@@ -40,49 +40,28 @@ display:block;
 filter:drop-shadow(0 4px 12px rgba(0,0,0,0.2));
 }
 
-/* HERO-KORT */
-.hero-card{
-background:white;
-color:#2d3748;
-max-width:600px;
-margin:0 auto;
-padding:18px 20px;
-border-radius:14px;
-box-shadow:0 6px 20px rgba(0,0,0,0.15);
-}
-
-/* ✅ NY TITELSTIL */
-.main-title{
-font-size:2rem;
+/* ✅ HUVUDRUBRIK */
+.hero h1{
+margin:0;
+font-size:1.4rem;
 font-weight:600;
 letter-spacing:0.5px;
-margin:0 0 8px;
-text-align:center;
-position:relative;
+opacity:0.95;
 }
 
-.main-title::after{
-content:"";
-display:block;
-width:50px;
-height:3px;
-margin:10px auto 0;
-background:#3fa9f5;
-border-radius:2px;
-opacity:0.8;
+/* ✅ UNDERRUBRIK (störst) */
+.hero .main-title{
+font-size:2.2rem;
+font-weight:700;
+margin:10px auto;
+max-width:600px;
 }
 
-/* UNDERRUBRIK */
-.subtitle{
-font-size:0.95rem;
-opacity:0.8;
-margin-bottom:10px;
-}
-
-/* INTRO */
-.hero-card p{
-margin:0;
+/* ✅ INTRO */
+.hero p{
+margin-top:10px;
 font-size:1rem;
+opacity:0.95;
 }
 
 /* CONTAINER */
@@ -183,15 +162,14 @@ color:#567;
 
 .logo{
 max-width:180px;
-margin-bottom:15px;
 }
 
-.main-title{
-font-size:1.6rem;
+.hero h1{
+font-size:1.1rem;
 }
 
-.hero-card{
-padding:16px;
+.hero .main-title{
+font-size:1.7rem;
 }
 
 .section{
@@ -209,19 +187,18 @@ padding:16px;
 
 <img src="digidelcenter.jpg" alt="DigidelCenter logga" class="logo">
 
-<div class="hero-card">
-<h1 class="main-title">Enkätresultat våren 2026</h1>
-<div class="subtitle">DigidelCenter Örnsköldsvik</div>
+<h1>DigidelCenter Örnsköldsvik</h1>
+
+<div class="main-title">Enkätresultat våren 2026</div>
+
 <p>
 Tack för era svar! 💙
 </p>
-</div>
 
 </div>
 
 <div class="container">
 
-<!-- ✅ TEXTEN NU I RUTA -->
 <section class="section">
 
 <h2>Det ni vill lära er mer om</h2>
