@@ -21,8 +21,16 @@ padding:70px 20px;
 text-align:center;
 }
 
-.hero h1{font-size:2.5rem;margin-bottom:10px;}
-.hero p{max-width:800px;margin:auto;font-size:1.1rem;}
+.hero h1{
+font-size:2.4rem;
+margin-bottom:10px;
+}
+
+.hero p{
+max-width:800px;
+margin:auto;
+font-size:1.1rem;
+}
 
 .container{
 max-width:1100px;
@@ -38,9 +46,14 @@ border-radius:16px;
 box-shadow:0 5px 18px rgba(0,0,0,0.06);
 }
 
-h2{color:#1f6fb2;margin-top:0;}
+h2{
+color:#1f6fb2;
+margin-top:0;
+}
 
-.chart-row{margin-bottom:14px;}
+.chart-row{
+margin-bottom:14px;
+}
 
 .label{
 display:flex;
@@ -75,14 +88,39 @@ border-radius:12px;
 text-align:center;
 }
 
-.icon{font-size:32px;}
+.icon{
+font-size:32px;
+}
 
-.quote{
-background:#fff7dd;
+.comment-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:12px;
+margin-top:10px;
+}
+
+.bubble{
 padding:15px;
-border-left:5px solid #ffcc4d;
+border-radius:14px;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+font-size:0.95rem;
+}
+
+.good{
+background:#e7f7ec;
+border-left:5px solid #2f9e44;
+}
+
+.improve{
+background:#fff3e0;
+border-left:5px solid #f08c00;
+}
+
+.note{
+margin-top:15px;
+background:#f4f8fb;
+padding:14px;
 border-radius:10px;
-margin:10px 0;
 }
 
 .highlight{
@@ -109,8 +147,8 @@ color:#567;
 <div class="hero">
 <h1>Tack för att ni svarade 💙</h1>
 <p>
-68 personer svarade på vår enkät.
-Det hjälper oss att göra DigidelCenter ännu bättre.
+68 personer deltog i vår enkät och hjälpte oss utveckla DigidelCenter.
+Här är vad ni berättade – och vad vi gör nu.
 </p>
 </div>
 
@@ -135,7 +173,7 @@ Det hjälper oss att göra DigidelCenter ännu bättre.
 
 <section class="section">
 
-<h2>🎯 Det ni önskade – det gör vi</h2>
+<h2>🎯 Ni önskade – vi gör</h2>
 
 <div class="cards">
 
@@ -148,7 +186,7 @@ Det hjälper oss att göra DigidelCenter ännu bättre.
 <div class="card">
 <div class="icon">🛡️</div>
 <h3>Trygg på nätet</h3>
-<p>Vi lär ut hur du skyddar dig online.</p>
+<p>Vi lär hur du skyddar dig online.</p>
 </div>
 
 <div class="card">
@@ -160,7 +198,7 @@ Det hjälper oss att göra DigidelCenter ännu bättre.
 </div>
 
 <div class="highlight">
-Vi kommer också ha fler tider och dagar att välja på under hösten.
+Vi kommer också ha fler dagar och tider under hösten så att fler kan vara med.
 </div>
 
 </section>
@@ -169,38 +207,34 @@ Vi kommer också ha fler tider och dagar att välja på under hösten.
 
 <h2>❤️ Det ni säger</h2>
 
-<div class="quote">”Det är lättare när man får hjälp som man förstår.”</div>
+<div class="comment-grid">
 
-<div class="quote">”Det känns bra att lära tillsammans med andra.”</div>
+<!-- POSITIVA -->
+<div class="bubble good">”Det känns bra att lära tillsammans med andra.”</div>
+<div class="bubble good">”Det är lättare när man får hjälp som man förstår.”</div>
+<div class="bubble good">”Det är skönt att kunna ställa frågor.”</div>
+<div class="bubble good">”Fikat gör att man kan prata och känna sig trygg.”</div>
+<div class="bubble good">”Bra att ni fortsätter med dessa träffar.”</div>
+<div class="bubble good">”Mycket lärorikt och trevligt.”</div>
+<div class="bubble good">”Det är bra att få höra andras frågor och erfarenheter.”</div>
 
-<div class="quote">”Det är skönt att kunna ställa frågor.”</div>
+<!-- FÖRBÄTTRING -->
+<div class="bubble improve">”Bra att kunna boka tid vid eget problem – men önskar fler tider.”</div>
+<div class="bubble improve">”Ibland är det olika nivå i gruppen, vilket kan göra det svårt.”</div>
+<div class="bubble improve">”Det behövs mer lugn och mer tid att öva.”</div>
+<div class="bubble improve">”Alla hinner inte träna tillräckligt mellan gångerna.”</div>
 
-<div class="quote">”Fikat gör att man kan prata och känna sig trygg.”</div>
+</div>
 
-<div class="quote">”Bra att ni fortsätter med dessa träffar.”</div>
-
+<div class="note">
 <p>
-Många skriver att det är skönt att inte behöva klara allt själv.
+💡 Många säger att det är extra bra att lära tillsammans med andra.
+Det gör att man vågar fråga mer och känner sig tryggare.
 </p>
 
-</section>
-
-<section class="section">
-
-<h2>🔄 Det vi ändrar</h2>
-
 <p>
-Ni har sagt att tiderna inte alltid passar alla.
+Det ni också säger är att det ibland behövs mer tid, lugnare tempo och fler möjligheter att öva.
 </p>
-
-<div class="highlight">
-Därför kommer vi att ha olika dagar för våra träffar.<br><br>
-Vi ser också över att:
-<ul>
-<li>ta det i lugnare tempo</li>
-<li>hjälpa där deltagarna är</li>
-<li>ge mer tid för frågor</li>
-</ul>
 </div>
 
 </section>
@@ -208,7 +242,7 @@ Vi ser också över att:
 </div>
 
 <div class="footer">
-Tack för att ni hjälper oss att bli bättre 💙<br>
+Tack för att ni hjälper oss att utveckla DigidelCenter 💙<br>
 Vi ses i höst 🌱
 </div>
 
