@@ -21,16 +21,8 @@ padding:70px 20px;
 text-align:center;
 }
 
-.hero h1{
-font-size:2.4rem;
-margin-bottom:10px;
-}
-
-.hero p{
-max-width:800px;
-margin:auto;
-font-size:1.1rem;
-}
+.hero h1{font-size:2.4rem;margin-bottom:10px;}
+.hero p{max-width:800px;margin:auto;font-size:1.1rem;}
 
 .container{
 max-width:1100px;
@@ -51,9 +43,7 @@ color:#1f6fb2;
 margin-top:0;
 }
 
-.chart-row{
-margin-bottom:14px;
-}
+.chart-row{margin-bottom:14px;}
 
 .label{
 display:flex;
@@ -88,22 +78,39 @@ border-radius:12px;
 text-align:center;
 }
 
-.icon{
-font-size:32px;
-}
+.icon{font-size:32px;}
 
-.comment-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:12px;
+/* KOMMENTARER */
+.comment-section{
 margin-top:10px;
 }
 
+.subheading{
+margin-top:25px;
+margin-bottom:10px;
+font-weight:bold;
+font-size:1.1rem;
+color:#2d3748;
+}
+
+.divider{
+height:1px;
+background:#dde7f0;
+margin:25px 0;
+}
+
+.comment-grid{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
 .bubble{
-padding:15px;
+padding:14px 16px;
 border-radius:14px;
 box-shadow:0 3px 10px rgba(0,0,0,0.05);
 font-size:0.95rem;
+width:100%;
 }
 
 .good{
@@ -148,7 +155,6 @@ color:#567;
 <h1>Tack för att ni svarade 💙</h1>
 <p>
 68 personer deltog i vår enkät och hjälpte oss utveckla DigidelCenter.
-Här är vad ni berättade – och vad vi gör nu.
 </p>
 </div>
 
@@ -198,7 +204,7 @@ Här är vad ni berättade – och vad vi gör nu.
 </div>
 
 <div class="highlight">
-Vi kommer också ha fler dagar och tider under hösten så att fler kan vara med.
+Vi kommer också ha fler dagar och tider under hösten.
 </div>
 
 </section>
@@ -207,22 +213,29 @@ Vi kommer också ha fler dagar och tider under hösten så att fler kan vara med
 
 <h2>❤️ Det ni säger</h2>
 
-<div class="comment-grid">
+<div class="comment-section">
 
-<!-- POSITIVA -->
+<div class="subheading">💚 Det ni tycker är bra</div>
+
+<div class="comment-grid">
 <div class="bubble good">”Det känns bra att lära tillsammans med andra.”</div>
 <div class="bubble good">”Det är lättare när man får hjälp som man förstår.”</div>
 <div class="bubble good">”Det är skönt att kunna ställa frågor.”</div>
 <div class="bubble good">”Fikat gör att man kan prata och känna sig trygg.”</div>
 <div class="bubble good">”Bra att ni fortsätter med dessa träffar.”</div>
-<div class="bubble good">”Mycket lärorikt och trevligt.”</div>
 <div class="bubble good">”Det är bra att få höra andras frågor och erfarenheter.”</div>
+</div>
 
-<!-- FÖRBÄTTRING -->
+<div class="divider"></div>
+
+<div class="subheading">🟠 Det ni vill utveckla</div>
+
+<div class="comment-grid">
 <div class="bubble improve">”Bra att kunna boka tid vid eget problem – men önskar fler tider.”</div>
 <div class="bubble improve">”Ibland är det olika nivå i gruppen, vilket kan göra det svårt.”</div>
 <div class="bubble improve">”Det behövs mer lugn och mer tid att öva.”</div>
 <div class="bubble improve">”Alla hinner inte träna tillräckligt mellan gångerna.”</div>
+</div>
 
 </div>
 
