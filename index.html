@@ -18,7 +18,7 @@ line-height:1.7;
 .hero{
 background:linear-gradient(135deg,#0b4f8a,#3fa9f5);
 color:white;
-padding:50px 20px 40px;
+padding:60px 20px 40px;
 text-align:center;
 position:relative;
 }
@@ -31,7 +31,7 @@ background:radial-gradient(circle at top, rgba(255,255,255,0.25), transparent 60
 pointer-events:none;
 }
 
-/* LOGGA */
+/* ✅ LOGGA */
 .logo{
 max-width:260px;
 width:100%;
@@ -42,7 +42,7 @@ filter:drop-shadow(0 4px 12px rgba(0,0,0,0.2));
 
 /* RUBRIK */
 .hero h1{
-font-size:2.4rem;
+font-size:2.6rem;
 margin-bottom:10px;
 text-shadow:0 3px 10px rgba(0,0,0,0.25);
 }
@@ -50,7 +50,7 @@ text-shadow:0 3px 10px rgba(0,0,0,0.25);
 .hero p{
 max-width:750px;
 margin:auto;
-font-size:1.05rem;
+font-size:1.1rem;
 opacity:0.95;
 }
 
@@ -74,12 +74,6 @@ color:#1f6fb2;
 margin-top:0;
 }
 
-/* INTRO */
-.intro{
-color:#555;
-font-size:0.95rem;
-}
-
 /* STAPLAR */
 .chart-row{
 margin-bottom:10px;
@@ -94,7 +88,7 @@ margin-bottom:3px;
 }
 
 .bar{
-height:10px;
+height:12px;
 background:#e6eef6;
 border-radius:20px;
 overflow:hidden;
@@ -162,11 +156,11 @@ margin-bottom:15px;
 }
 
 .hero h1{
-font-size:1.9rem;
+font-size:2.1rem;
 }
 
 .hero p{
-font-size:0.95rem;
+font-size:1rem;
 }
 
 .section{
@@ -179,29 +173,33 @@ padding:16px;
 
 <body>
 
+<!-- HERO -->
 <div class="hero">
 
-<!-- ✅ DIN LOGGA -->
+<!-- ✅ LOGGAN TILLAGD -->
 <img src="digidelcenter.jpg" alt="DigidelCenter logga" class="logo">
 
-<h1>DigidelCenter Örnsköldsvik - Enkätresultat våren 2026</h1>
+<h1>DigidelCenter Örnsköldsvik <BR>Enkätresultat våren 2026</h1>
 
 <p>
-Tack för era svar! 💙
+Tack för era svar! 💙<br>
 </p>
 
 </div>
+
+<h2>Det ni vill lära er mer om</h2>
+
+<p class="intro">
+68 personer svarade på enkäten.
+<br><br>
+Siffrorna visar hur många som röstat på ett visst tema till en tematräff.
+</p>
 
 <div class="container">
 
 <section class="section">
 
 <h2>Det ni vill lära er mer om</h2>
-
-<p class="intro">
-68 personer svarade på enkäten.<br><br>
-Siffrorna visar hur många som röstat på ett visst tema till en tematräff.
-</p>
 
 <div class="chart-row"><div class="label"><span>📱 Nyttiga appar</span><span>41</span></div><div class="bar"><div class="fill" style="width:100%"></div></div></div>
 <div class="chart-row"><div class="label"><span>🛡️ Internetsäkerhet</span><span>39</span></div><div class="bar"><div class="fill" style="width:95%"></div></div></div>
@@ -213,6 +211,56 @@ Siffrorna visar hur många som röstat på ett visst tema till en tematräff.
 <div class="chart-row"><div class="label"><span>📱 Mobilen</span><span>27</span></div><div class="bar"><div class="fill" style="width:66%"></div></div></div>
 <div class="chart-row"><div class="label"><span>🕵️ Källkritik</span><span>22</span></div><div class="bar"><div class="fill" style="width:54%"></div></div></div>
 <div class="chart-row"><div class="label"><span>✨ AI</span><span>22</span></div><div class="bar"><div class="fill" style="width:54%"></div></div></div>
+
+</section>
+
+<section class="section">
+
+<h2>Det ni säger</h2>
+
+<div class="comment-section">
+
+<div class="subheading">💚 Det som är bra</div>
+
+<div class="comment-grid">
+<div class="bubble good">”Det känns bra att lära tillsammans med andra.”</div>
+<div class="bubble good">”Fikastunden gör att man kan prata med varandra och dela kunskap.”</div>
+<div class="bubble good">”Tematräffarna har varit bra och givande.”</div>
+<div class="bubble good">”Bra att kunna få hjälp när man behöver.”</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="subheading">🟠 Det vi kan göra bättre</div>
+
+<div class="comment-grid">
+<div class="bubble improve">”Önskar träffar på olika veckodagar än bara onsdagar.”</div>
+<div class="bubble improve">”Ibland olika nivå i gruppen, vilket kan vara svårt.”</div>
+<div class="bubble improve">”Mer tid för att öva under träffarna.”</div>
+<div class="bubble improve">”Önskar fler tider för Digitalhjälpen.”</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>🌱 Det vi tar med oss till hösten</h2>
+
+<p>
+Tack för era svar. De hjälper oss i planeringen av höstens verksamhet på DigidelCenter.
+</p>
+
+<ul>
+<li>Vi kommer erbjuda tematräffar om bland annat nyttiga appar, internetsäkerhet och mobilfoto</li>
+<li>Vi har tematräffarna på olika veckodagar så fler kan vara med</li>
+<li>Vi försöker ha lagom tempo och tid för frågor</li>
+</ul>
+
+<p>
+Tack för att ni hjälper oss att göra verksamheten bättre 💙
+</p>
 
 </section>
 
