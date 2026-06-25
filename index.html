@@ -7,7 +7,6 @@
 
 <style>
 
-
 body{
 margin:0;
 font-family:Arial, sans-serif;
@@ -16,33 +15,138 @@ color:#2d3748;
 line-height:1.7;
 }
 
+/* HERO */
+.hero{
+background:linear-gradient(135deg,#0b4f8a,#3fa9f5);
+color:white;
+padding:60px 15px 70px;
+text-align:center;
+position:relative;
+}
 
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:radial-gradient(circle at top, rgba(255,255,255,0.25), transparent 60%);
+pointer-events:none;
+}
 
+.logo{
+max-width:200px;
+width:100%;
+margin:0 auto 15px;
+display:block;
+filter:drop-shadow(0 4px 12px rgba(0,0,0,0.2));
+}
 
+.hero h1{
+margin:0;
+font-size:1.2rem;
+font-weight:600;
+opacity:0.95;
+}
 
+.hero .main-title{
+font-size:2.1rem;
+font-weight:700;
+margin-top:10px;
+}
 
+/* CONTAINER */
+.container{
+max-width:900px;
+margin:auto;
+padding:18px;
+}
+
+.section{
+background:white;
+margin-top:20px;
+padding:22px;
+border-radius:14px;
+box-shadow:0 4px 15px rgba(0,0,0,0.06);
+}
+
+h2{
+color:#1f6fb2;
+margin-top:0;
+}
+
+.intro{
+color:#555;
+font-size:1rem;
+}
+
+/* STAPLAR */
+.chart-row{
+margin-bottom:10px;
+}
+
+.label{
+display:flex;
+justify-content:space-between;
+font-weight:bold;
+font-size:0.95rem;
+margin-bottom:3px;
+}
+
+.bar{
+height:12px;
+background:#e6eef6;
+border-radius:20px;
+overflow:hidden;
+}
+
+.fill{
+height:100%;
+background:linear-gradient(to right,#6ea8ff,#8bd8c7);
+border-radius:20px;
+}
+
+/* KOMMENTARER */
+.comment-grid{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.bubble{
+padding:12px 14px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+font-size:0.95rem;
+}
+
+.good{
+background:#e7f7ec;
+border-left:5px solid #2f9e44;
+}
+
+.improve{
+background:#fff3e0;
+border-left:5px solid #f08c00;
+}
+
+/* UNSUBSCRIBE */
 .unsubscribe{
 text-align:center;
 padding:25px 15px;
 margin-top:40px;
-background:#ffffff;
+background:#fff;
 border-radius:14px;
 box-shadow:0 3px 12px rgba(0,0,0,0.06);
 }
 
 .unsubscribe h2{
-font-size:1.4rem;
 color:#1f6fb2;
-margin-bottom:10px;
+font-size:1.4rem;
 }
 
 .unsubscribe p{
 color:#555;
-font-size:1rem;
-margin-bottom:15px;
-max-width:420px;
-margin-left:auto;
-margin-right:auto;
+max-width:400px;
+margin:0 auto 15px;
 }
 
 .unsubscribe input{
@@ -73,148 +177,6 @@ max-width:320px;
 background:#15558a;
 }
 
-
-
-
-
-
-
-/* HERO */
-.hero{
-background:linear-gradient(135deg,#0b4f8a,#3fa9f5);
-color:white;
-padding:60px 15px 70px;
-text-align:center;
-position:relative;
-}
-
-.hero::after{
-content:"";
-position:absolute;
-inset:0;
-background:radial-gradient(circle at top, rgba(255,255,255,0.25), transparent 60%);
-pointer-events:none;
-}
-
-/* LOGGA */
-.logo{
-max-width:260px;
-width:100%;
-margin:0 auto 20px;
-display:block;
-filter:drop-shadow(0 4px 12px rgba(0,0,0,0.2));
-}
-
-/* ✅ HUVUDRUBRIK */
-.hero h1{
-margin:0;
-font-size:1.4rem;
-font-weight:600;
-letter-spacing:0.5px;
-opacity:0.95;
-}
-
-/* ✅ UNDERRUBRIK (störst) */
-.hero .main-title{
-font-size:2.2rem;
-font-weight:700;
-margin:10px auto;
-max-width:600px;
-}
-
-/* ✅ INTRO */
-.hero p{
-margin-top:10px;
-font-size:1rem;
-opacity:0.95;
-}
-
-/* CONTAINER */
-.container{
-max-width:900px;
-margin:auto;
-padding:18px;
-}
-
-.section{
-background:white;
-margin-top:20px;
-padding:22px;
-border-radius:14px;
-box-shadow:0 4px 15px rgba(0,0,0,0.06);
-}
-
-h2{
-color:#1f6fb2;
-margin-top:0;
-}
-
-/* STAPLAR */
-.chart-row{
-margin-bottom:10px;
-}
-
-.label{
-display:flex;
-justify-content:space-between;
-font-weight:bold;
-font-size:0.95rem;
-margin-bottom:3px;
-}
-
-.bar{
-height:12px;
-background:#e6eef6;
-border-radius:20px;
-overflow:hidden;
-}
-
-.fill{
-height:100%;
-background:linear-gradient(to right,#6ea8ff,#8bd8c7);
-border-radius:20px;
-}
-
-/* KOMMENTARER */
-.comment-section{
-margin-top:10px;
-}
-
-.subheading{
-margin-top:18px;
-margin-bottom:10px;
-font-weight:bold;
-}
-
-.divider{
-height:1px;
-background:#dde7f0;
-margin:18px 0;
-}
-
-.comment-grid{
-display:flex;
-flex-direction:column;
-gap:10px;
-}
-
-.bubble{
-padding:12px 14px;
-border-radius:12px;
-box-shadow:0 2px 8px rgba(0,0,0,0.05);
-font-size:0.95rem;
-}
-
-.good{
-background:#e7f7ec;
-border-left:5px solid #2f9e44;
-}
-
-.improve{
-background:#fff3e0;
-border-left:5px solid #f08c00;
-}
-
 /* FOOTER */
 .footer{
 text-align:center;
@@ -222,50 +184,12 @@ padding:30px;
 color:#567;
 }
 
-/* MOBIL */
 @media(max-width:700px){
-
-.logo{
-max-width:180px;
-}
-
-.hero h1{
-font-size:1.1rem;
-}
-
 .hero .main-title{
 font-size:1.7rem;
 }
-
-.section{
-padding:16px;
-}
-}
-.unsubscribe{
-text-align:center;
-margin-top:40px;
-padding:25px 15px;
 }
 
-.unsubscribe p{
-margin-bottom:12px;
-color:#567;
-}
-
-.mail-button{
-display:inline-block;
-padding:12px 20px;
-background:#1f6fb2;
-color:white;
-text-decoration:none;
-border-radius:25px;
-font-weight:bold;
-transition:0.2s;
-}
-
-.mail-button:hover{
-background:#15558a;
-}
 </style>
 
 </head>
@@ -280,6 +204,7 @@ background:#15558a;
 <h1>DigidelCenter Örnsköldsvik</h1>
 
 <div class="main-title">Enkätresultat våren 2026</div>
+
 </div>
 
 <div class="container">
@@ -291,22 +216,15 @@ background:#15558a;
 <p class="intro">
 <strong>
 69 personer har svarat på enkäten.<br><br>
-
 Siffrorna visar vilka teman flest vill ha på kommande tematräffar.
 </strong>
 </p>
-<br>
 
 <div class="chart-row"><div class="label"><span>📱 Nyttiga appar</span><span>41</span></div><div class="bar"><div class="fill" style="width:100%"></div></div></div>
 <div class="chart-row"><div class="label"><span>🛡️ Internetsäkerhet</span><span>40</span></div><div class="bar"><div class="fill" style="width:95%"></div></div></div>
 <div class="chart-row"><div class="label"><span>🔎 Google-tjänster</span><span>39</span></div><div class="bar"><div class="fill" style="width:95%"></div></div></div>
 <div class="chart-row"><div class="label"><span>📸 Foto och bilder</span><span>33</span></div><div class="bar"><div class="fill" style="width:78%"></div></div></div>
 <div class="chart-row"><div class="label"><span>📚 Fotobok</span><span>30</span></div><div class="bar"><div class="fill" style="width:71%"></div></div></div>
-<div class="chart-row"><div class="label"><span>🔐 Lösenord</span><span>29</span></div><div class="bar"><div class="fill" style="width:71%"></div></div></div>
-<div class="chart-row"><div class="label"><span>🏦 Bank och säkerhet</span><span>27</span></div><div class="bar"><div class="fill" style="width:66%"></div></div></div>
-<div class="chart-row"><div class="label"><span>📱 Mobilen</span><span>28</span></div><div class="bar"><div class="fill" style="width:66%"></div></div></div>
-<div class="chart-row"><div class="label"><span>🕵️ Källkritik</span><span>22</span></div><div class="bar"><div class="fill" style="width:54%"></div></div></div>
-<div class="chart-row"><div class="label"><span>✨ AI</span><span>22</span></div><div class="bar"><div class="fill" style="width:54%"></div></div></div>
 
 </section>
 
@@ -314,27 +232,16 @@ Siffrorna visar vilka teman flest vill ha på kommande tematräffar.
 
 <h2>Det ni säger</h2>
 
-<div class="comment-section">
-
-<div class="subheading">💚 Det som är bra</div>
-
 <div class="comment-grid">
-<div class="bubble good">”Det känns bra att lära tillsammans med andra.”</div>
-<div class="bubble good">”Fikastunden gör att man kan prata med varandra och dela kunskap.”</div>
-<div class="bubble good">”Tematräffarna har varit bra och givande.”</div>
-<div class="bubble good">”Bra att kunna få hjälp när man behöver.”</div>
-</div>
 
-<div class="divider"></div>
+<div class="bubble good">Det känns bra att lära tillsammans med andra.</div>
+<div class="bubble good">Fikastunden gör att man kan prata och lära av varandra.</div>
+<div class="bubble good">Tematräffarna har varit bra och givande.</div>
+<div class="bubble good">Bra att kunna få hjälp när man behöver.</div>
 
-<div class="subheading">🟠 Det vi kan göra bättre</div>
-
-<div class="comment-grid">
-<div class="bubble improve">”Önskar träffar på olika veckodagar än bara onsdagar.”</div>
-<div class="bubble improve">”Ibland olika nivå i gruppen, vilket kan vara svårt.”</div>
-<div class="bubble improve">”Mer tid för att öva under träffarna.”</div>
-<div class="bubble improve">”Önskar fler tider för Digitalhjälpen.”</div>
-</div>
+<div class="bubble improve">Önskar träffar på olika veckodagar än bara onsdagar.</div>
+<div class="bubble improve">Mer tid för att öva under träffarna.</div>
+<div class="bubble improve">Önskar fler tider för Digitalhjälpen.</div>
 
 </div>
 
@@ -349,34 +256,50 @@ Tack för era svar. De hjälper oss i planeringen av höstens verksamhet på Dig
 </p>
 
 <ul>
-<li>Vi kommer erbjuda tematräffar om bland annat nyttiga appar, internetsäkerhet och mobilfoto</li>
-<li>Vi har tematräffarna på olika veckodagar så fler kan vara med</li>
-<li>Vi försöker ha lagom tempo och tid för frågor</li>
+<li>Tematräffar om bland annat appar, säkerhet och mobilfoto</li>
+<li>Olika veckodagar så fler kan vara med</li>
+<li>Lagom tempo och tid för frågor</li>
 </ul>
-
-<p>
-Tack för att ni hjälper oss att göra verksamheten bättre 💙
-</p>
 
 </section>
 
-</div>
-
+<!-- UNSUBSCRIBE -->
 <div class="unsubscribe">
+
+<h2>Avsluta SMS-utskick</h2>
+
 <p>
-Vill du inte längre få våra utskick?
+Vill du inte längre få SMS från oss?<br>
+Fyll i ditt namn och mobilnummer.
 </p>
 
-<a href="mailto:digidelcenter@ornskoldsvik.se" class="mail-button">
-Klicka här och fyll i namn och mobilnummer.
-</a>
+<form action="mailto:digidelcenter@ornskoldsvik.se"
+method="post"
+enctype="text/plain">
 
+<label>Namn</label><br>
+<input type="text" name="Namn" required>
+
+<br><br>
+
+<label>Mobilnummer</label><br>
+<input type="tel" name="Mobilnummer" required>
+
+<br><br>
+
+<button type="submit">Ta bort mig från SMS-listan</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
 <div class="footer">
-Vi ses i höst! 🌱 <br>
+Vi ses i höst! 🌱<br>
 Gunilla, Luwam & Åsa
 </div>
 
-
-</div>
 </body>
 </html>
