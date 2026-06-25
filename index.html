@@ -31,6 +31,15 @@ background:radial-gradient(circle at top, rgba(255,255,255,0.25), transparent 60
 pointer-events:none;
 }
 
+/* LOGGA */
+.logo{
+max-width:220px;
+width:100%;
+margin:0 auto 15px;
+display:block;
+filter:drop-shadow(0 4px 10px rgba(0,0,0,0.25));
+}
+
 .hero h1{
 font-size:2.6rem;
 margin-bottom:10px;
@@ -64,7 +73,7 @@ color:#1f6fb2;
 margin-top:0;
 }
 
-/* STAPLAR */
+/* STAPLAR (VIKTIGT – ÅTERSTÄLLD) */
 .chart-row{
 margin-bottom:10px;
 }
@@ -188,12 +197,16 @@ padding:16px;
 
 <!-- HERO -->
 <div class="hero">
-<h1>📊 Enkätresultat våren 2026</h1>
+
+<img src="digidelcenter.jpg" alt="DigidelCenter logga" class="logo">
+
+<h1>Enkätresultat våren 2026</h1>
 
 <p>
-Tack för era svar 💙<br>
+Tack för att ni svarade på enkäten 💙<br>
 Här ser ni vad ni tycker om DigidelCenter, våra tematräffar och Digitalhjälpen.
 </p>
+
 </div>
 
 <div class="container">
@@ -202,24 +215,55 @@ Här ser ni vad ni tycker om DigidelCenter, våra tematräffar och Digitalhjälp
 
 <h2>Det ni vill lära er mer om</h2>
 
-<p class="intro">
-<strong>
-68 personer svarade på enkäten.<br><br>
-Siffrorna visar vilka teman flest vill ha på kommande tematräffar.
-</strong>
-</p>
-<br>
+<div class="chart-row">
+<div class="label"><span>📱 Nyttiga appar</span><span>41</span></div>
+<div class="bar"><div class="fill" style="width:100%"></div></div>
+</div>
 
-<div class="chart-row"><div class="label"><span>📱 Nyttiga appar</span><span>41</span></div><div class="bar"><div class="fill" style="width:100%"></div></div></div>
-<div class="chart-row"><div class="label"><span>🛡️ Internetsäkerhet</span><span>39</span></div><div class="bar"><div class="fill" style="width:95%"></div></div></div>
-<div class="chart-row"><div class="label"><span>🔎 Google-tjänster</span><span>39</span></div><div class="bar"><div class="fill" style="width:95%"></div></div></div>
-<div class="chart-row"><div class="label"><span>📸 Foto och bilder</span><span>32</span></div><div class="bar"><div class="fill" style="width:78%"></div></div></div>
-<div class="chart-row"><div class="label"><span>🔐 Lösenord</span><span>29</span></div><div class="bar"><div class="fill" style="width:71%"></div></div></div>
-<div class="chart-row"><div class="label"><span>📚 Fotobok</span><span>29</span></div><div class="bar"><div class="fill" style="width:71%"></div></div></div>
-<div class="chart-row"><div class="label"><span>🏦 Bank och säkerhet</span><span>27</span></div><div class="bar"><div class="fill" style="width:66%"></div></div></div>
-<div class="chart-row"><div class="label"><span>📱 Mobilen</span><span>27</span></div><div class="bar"><div class="fill" style="width:66%"></div></div></div>
-<div class="chart-row"><div class="label"><span>🕵️ Källkritik</span><span>22</span></div><div class="bar"><div class="fill" style="width:54%"></div></div></div>
-<div class="chart-row"><div class="label"><span>✨ AI</span><span>22</span></div><div class="bar"><div class="fill" style="width:54%"></div></div></div>
+<div class="chart-row">
+<div class="label"><span>🛡️ Internetsäkerhet</span><span>39</span></div>
+<div class="bar"><div class="fill" style="width:95%"></div></div>
+</div>
+
+<div class="chart-row">
+<div class="label"><span>🔎 Google-tjänster</span><span>39</span></div>
+<div class="bar"><div class="fill" style="width:95%"></div></div>
+</div>
+
+<div class="chart-row">
+<div class="label"><span>📸 Foto och bilder</span><span>32</span></div>
+<div class="bar"><div class="fill" style="width:78%"></div></div>
+</div>
+
+<div class="chart-row">
+<div class="label"><span>🔐 Lösenord</span><span>29</span></div>
+<div class="bar"><div class="fill" style="width:71%"></div></div>
+</div>
+
+<div class="chart-row">
+<div class="label"><span>📚 Fotobok</span><span>29</span></div>
+<div class="bar"><div class="fill" style="width:71%"></div></div>
+</div>
+
+<div class="chart-row">
+<div class="label"><span>🏦 Bank och säkerhet</span><span>27</span></div>
+<div class="bar"><div class="fill" style="width:66%"></div></div>
+</div>
+
+<div class="chart-row">
+<div class="label"><span>📱 Mobilen</span><span>27</span></div>
+<div class="bar"><div class="fill" style="width:66%"></div></div>
+</div>
+
+<div class="chart-row">
+<div class="label"><span>🕵️ Källkritik</span><span>22</span></div>
+<div class="bar"><div class="fill" style="width:54%"></div></div>
+</div>
+
+<div class="chart-row">
+<div class="label"><span>✨ AI</span><span>22</span></div>
+<div class="bar"><div class="fill" style="width:54%"></div></div>
+</div>
 
 </section>
 
